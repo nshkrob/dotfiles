@@ -69,10 +69,6 @@
 ;; Real Python-mode
 ;; (load-file "~/.emacs.d/python-mode.el")
 
-;; Pig mode
-(load-file "~/.emacs.d/pig-mode.elc")
-(require 'pig-mode)
-
 ;; Window position and size for Macbook 13' screen.
 ;; Only in nextstep = OSX window system.
 (if (eq window-system 'ns)
@@ -292,6 +288,7 @@
 ;;   ["black" "red" "dark green" "dark violet" "blue" "magenta" "cyan" "white"])
 
 ;; Colors for ansi-term.
+;; Apparently the ansi-color stuff got broken somewhere between 22-23-24.
 ;; Replace the ugly yellow with red3
 (setq ansi-term-color-vector
       [unspecified
@@ -304,8 +301,8 @@
        "cyan3"
        "white"])
 
-;; Use the new colors.
-(setq ansi-color-map (ansi-color-make-color-map))
+;; Use the new colors. Used to work on some older emacs :P
+;; (setq ansi-color-map (ansi-color-make-color-map))
 
 (autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
 
@@ -357,8 +354,8 @@
          kill-buffer-query-functions))
 
 
-(require 'revive)
-(add-hook 'kill-emacs-hook 'save-current-configuration)
+;; (require 'revive)
+;; (add-hook 'kill-emacs-hook 'save-current-configuration)
 
 ;; Save config after idling for some time (seconds)
 (run-with-idle-timer 600.0 t 'save-current-configuration)
@@ -387,11 +384,6 @@
 
 ;; If more aliases are needed, check out abbrevs.
 
-
-;; (global-set-key (kbd "F7")
-;;                 (lambda ()
-;;                   (interactive)
-;;                   (insert "eval $(ssh-agent) && ssh-add /home/builder/src/richcole-test.pem")))
 
 ;; (comint-scroll-to-bottom-on-output
 ;; (setq comint-scroll-to-bottom-on-output nil)
