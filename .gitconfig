@@ -1,0 +1,43 @@
+[core]
+        # Don't highlight dos newlines.
+        # whitespace = cr-at-eol
+        pager = cat
+
+[color]
+        # Use colours whenever possible
+        ui = auto
+        # The following is probably not necessary with ui=auto.
+        diff = auto
+        branch = auto
+        grep = auto
+        status = auto
+        interactive = auto
+
+[color.diff]
+        # On Cygwin, blink makes a color bold and darker.
+        new = "green bold"
+        #new = "blue bold"
+        old = "red bold"
+        meta = magenta blink
+        
+[color.grep]
+        match = "black ul"
+        lineno = "green"
+
+[color.status]
+        added = "green bold"
+        updated = "green bold"
+        changed = "blue bold"
+        nobranch = "red bold"
+
+[color.branch]
+        current = "blue bold"
+        local = "magenta"
+        # local, remote, plain
+
+# [alias]
+#         lg = log --graph --abbrev-commit --date=relative
+[push]
+        default = simple
+[diff]
+	renames = true
