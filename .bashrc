@@ -20,3 +20,5 @@ export TERM=xterm
 # http://www.gnu.org/software/grep/manual/grep.html#Environment-Variables
 # Works for GNU grep only.
 export GREP_COLORS=ne
+
+source ~/.bash_aliases
