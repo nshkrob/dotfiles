@@ -41,3 +41,6 @@
         default = simple
 [diff]
 	renames = true
+[user]
+	name = Nik Shkrob
+	email = n.shkrob@gmail.com
