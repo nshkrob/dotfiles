@@ -322,7 +322,7 @@
 ;; Longlines mode messes with the timestamps
 (add-hook 'org-mode-hook
           (function (lambda ()
-                      (longlines-mode -1)
+                      ;; (longlines-mode -1)
                       (visual-line-mode 't))))
 (setq org-todo-keywords
       '((sequence "TODO" "INREVIEW" "|" "DONE" "|" "BLOCKED" "WONTFIX")))
