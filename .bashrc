@@ -22,3 +22,5 @@ export TERM=xterm
 export GREP_COLORS=ne
 
 source ~/.bash_aliases
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/vmware/appcatalyst/bin:$PATH

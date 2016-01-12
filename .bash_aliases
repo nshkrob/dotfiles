@@ -81,6 +81,7 @@ alias gp='git push'
 # Go to git root.
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias grh='git reset HEAD'
+alias gre='git remote -v'
 
 alias mktags='find . -name "*cpp" -o -name "*cxx" -o -name "*.hh" -o -name "*.h" -o -name "*.icc" | xargs etags --extra=+q --language-force=c++'
 alias pytags='find . -name "*py" | xargs /usr/local/bin/etags --extra=+q'
@@ -90,3 +91,6 @@ alias pyserve='python -m SimpleHTTPServer'
 
 # GNU coreutils
 alias realpath=grealpath
+
+# need sudo on osx
+alias h='sudo htop'
