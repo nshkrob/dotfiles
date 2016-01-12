@@ -18,6 +18,7 @@ alias g-='grep -v'
 alias gv='grep -v'
 # Find
 alias fin='find . -name'
+alias f='find .'
 # Make executable
 alias cx='chmod +x'
 # Careful!
