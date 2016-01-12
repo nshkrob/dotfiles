@@ -138,7 +138,7 @@
 ;; (color-theme-standard)
 ;; (color-theme-vim-colors)
 
-(require 'highlight-80+)
+;;(require 'highlight-80+)
 ;; (highlight-80+-mode t)
 
 ;; Insread of the default (minimize), undo on Control-Z
@@ -159,7 +159,7 @@
 (global-set-key [f3]
                 '(lambda ()
                    (interactive)
-                   (ansi-term "/bin/zsh")
+                   (ansi-term "/bin/sh")
                    ))
 ;; Kill, no questions asked.
 (global-set-key [f4] '(lambda ()
@@ -217,9 +217,9 @@
   ;; If there is more than one, they won't work right.
  )
 
-;; (set-frame-font "Monaco-11")
+(set-frame-font "Monaco-12")
 ;; (set-frame-font "-*-monaco-*-*-*-*-*-*-*-*-*-*-*-*")
-(set-face-attribute 'default nil :height 108)
+(set-face-attribute 'default nil :height 125)
 ;; C-x C-- (-, +, 0) - text-scale-adjust. Zoom text size up and down.
 
 (setq transient-mark-mode nil)
@@ -266,9 +266,9 @@
             ))
 
 ;; SHELL is /bin/false by default on Mac.
-(setenv "SHELL" "/bin/zsh")
-(setenv "ESHELL" "/bin/zsh")
-(shell "/bin/zsh")
+(setenv "SHELL" "/bin/bash")
+(setenv "ESHELL" "/bin/bash")
+(shell "/bin/bash")
 (setq mac-command-modifier 'meta)
 
 
@@ -365,7 +365,7 @@
 ;; To restore, use M-x resume.
 
 (require 'uniquify)
-(require 'guess-offset)
+;;(require 'guess-offset)
 
 ;; Enable pasting from System copy buffer (Ctrl-C) in addition to the
 ;; X buffer (select with mouse)
