@@ -6,3 +6,4 @@ ln -s $here/.bashrc ~
 ln -s $here/.bash_aliases ~
 ln -s $here/.emacs ~
 ln -s $here/.gitconfig ~
+ln -s $here/.profile ~
