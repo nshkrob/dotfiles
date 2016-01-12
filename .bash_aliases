@@ -13,7 +13,7 @@ alias pd='pushd .'
 alias less='less -R'
 # Colored grep
 # Correct grep version - GNU 2.15. bsd doesn't do colors right.
-alias grep='/usr/local/bin/grep --colour=auto'
+#alias grep='/usr/local/bin/grep --colour=auto'
 alias g-='grep -v'
 alias gv='grep -v'
 # Find
@@ -94,3 +94,6 @@ alias realpath=grealpath
 
 # need sudo on osx
 alias h='sudo htop'
+
+alias a='ag --noheading -S'
+alias al='a -l'
