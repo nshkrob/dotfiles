@@ -470,3 +470,20 @@
 
 (global-set-key (kbd "C->") 'git-grep)
 ;; ==================== /git grep ====================
+
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+  (package-initialize))
+
+;; To install packages:
+;; (list-packages)
+;; Select from the list, enter, Install.
+
+
+;; Don't make new splits for grep results and the like.
+(setq split-height-threshold nil
+      split-width-threshold nil)
