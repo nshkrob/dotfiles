@@ -44,7 +44,7 @@
 (global-set-key "\C-c\C-k" 'kill-region)
 
 (global-set-key [(control .)] 'tags-apropos)
-(global-set-key [(control alt shift .)] 'menu-bar-next-tag)
+(global-set-key [(control meta >)] 'menu-bar-next-tag)
 
 ;; Hardcore expand.
 (global-set-key "\M-?" 'hippie-expand)
