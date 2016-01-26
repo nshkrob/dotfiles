@@ -19,6 +19,7 @@ alias gv='grep -v'
 # Find
 alias fin='find . -name'
 alias f='find .'
+alias figr='find . | ag --noheading -S'
 # Make executable
 alias cx='chmod +x'
 # Careful!
@@ -98,3 +99,15 @@ alias h='sudo htop'
 
 alias a='ag --noheading -S'
 alias al='a -l'
+
+alias db='cd ~/code/devbox'
+
+alias vs='vagrant ssh'
+
+alias enter='./service -v enter'
+alias start='./service -v start'
+alias status='./service -v status'
+alias reset='./service -v reset'
+# ./service -v open
+
+alias sus='sort | uniq -c | sort -nr'

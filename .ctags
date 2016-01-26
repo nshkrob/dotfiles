@@ -1,0 +1,5 @@
+--verbose=yes
+--totals=yes
+-e
+--regex-PHP=/const[ \t]+([^ ]+)/\1/c,constant/
+--PHP-kinds=+c
