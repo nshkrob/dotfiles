@@ -111,3 +111,5 @@ alias reset='./service -v reset'
 # ./service -v open
 
 alias sus='sort | uniq -c | sort -nr'
+
+alias is_tags='find ./application/ ./runtime/ ./library/ -name *.php -exec ctags {} +'

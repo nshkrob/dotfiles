@@ -1,4 +1,4 @@
-export PS1='\n[$?]:\[\033[1;36m\]\t-\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\$ '
+export PS1='\[\033[00m\]\n[$?]:\[\033[1;36m\]\t \[\033[01;32m\]$(__git_ps1 "%s") \033[00m\]\[\033[01;34m\]\w\[\033[00m\]\n\$ '
 
 # PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 
@@ -26,3 +26,10 @@ source ~/.bash_aliases
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/vmware/appcatalyst/bin:$PATH
 
 export PATH=$HOME/code/ops/onebox/bin/:$PATH
+
+if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+fi
+
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+
