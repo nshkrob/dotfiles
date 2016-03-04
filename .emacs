@@ -243,6 +243,9 @@
                       (local-set-key "\C-c\C-o" 'comint-previous-prompt)
                       )))
 
+;; Default is "dirs" that doesn't work for some reason.
+(setq shell-dirstack-query "pwd")
+
 ;; This may help resync dirs every time Enter is pressed.
 ;; (add-hook 'comint-input-filter-functions
 ;;           (lambda (input)
@@ -488,3 +491,5 @@
 ;; Don't make new splits for grep results and the like.
 (setq split-height-threshold nil
       split-width-threshold nil)
+
+(defalias 'mo 'multi-occur-in-matching-buffers)
